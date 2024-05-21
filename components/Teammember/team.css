@@ -1,0 +1,68 @@
+.h1{
+    margin-right:50%;
+    margin-top:5%;
+    color: aliceblue;
+}
+
+
+
+
+.team-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .team-leader {
+    margin-bottom: 40px;
+    margin-top: 20px; /* Add margin-top to move the team leader down */
+    margin-left: 80%;
+  }
+  
+  .team-members {
+    display: flex;
+    justify-content: center;
+    margin-left: 80%;
+    gap:initial;
+    
+  }
+  
+  
+  .team-member {
+    text-align: center;
+    margin: 10px;
+  }
+  
+  .member-details h3 {
+    margin: 5px 0;
+  }
+  
+  .member-details p {
+    margin: 0;
+  }
+  
+  .profile-img-inputs {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .profile-img-inputs input {
+    margin: 5px;
+  }
+  .profile-img {
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    overflow: hidden; /* Ensures the image is contained within the circle */
+    background-color: rgb(213, 213, 226); /* Change the background color here */
+  }
+  
+  .profile-img img {
+    width: 70%; /* Ensures the image fills the circle */
+    height: auto;
+  }
+    
+
+ 

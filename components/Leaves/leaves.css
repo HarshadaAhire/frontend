@@ -1,0 +1,333 @@
+/* Default styles */
+.leave-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.leave-cards {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+.leave-card {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  margin-right: 10px;
+}
+
+.leave-card h2 {
+  margin-bottom: 20px;
+  margin-top: 10px;
+  font-weight: lighter;
+  color: #f0f0f0;
+}
+
+.leave-card-content {
+  display: flex;
+  align-items: center;
+}
+
+.leave-circle-graph {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
+
+.leave-circle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #007bff;
+  clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%, 50% var(--percentage), 0% var(--percentage));
+}
+
+.leave-info p {
+  margin: 0;
+}
+
+.leave-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  margin-left: 90px;
+  margin-right: auto;
+}
+
+.leave-table th,
+.leave-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.leave-table th {
+  background-color: #f2f2f2;
+}
+
+.leave-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.apply-button {
+  padding: 15px 30px;
+  font-size: 16px;
+  background-color: #f37b7b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-right: 80px;
+}
+
+.apply-button:hover {
+  background-color: #0056b3;
+}
+
+.leave-circle-graph {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  background-color: #e0e0e0;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.leave-circle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: conic-gradient(
+    #eff1f3 0% 30%,   /* blue for used */
+    #8a7c7c 30% 50%,  /* green for remaining */
+    #f37b7b 50% 100%  /* gray for unused */
+  );
+}
+
+.tabs {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.tabs button {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 20px 100px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.tabs button {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tabs button.active {
+  background-color: #ccc;
+}
+
+.leave-table {
+  margin-top: 20px; /* Add margin-top to create space between tabs and table */
+}
+
+.tabs button.active {
+  background-color: #ccc;
+}
+
+.leave-table {
+  margin-top: 30px; /* Add margin-top to create space between tabs and table */
+}
+
+.tabs {
+  display: flex;
+  justify-content: center; /* Center the tabs horizontally */
+  margin-top: 30px;
+}
+
+.tabs button {
+  background-color: #d87070;
+  border: none;
+  color: #ddd;
+  font-weight: bolder;
+  font-size: 1em;
+  padding: 10px 50px;
+  margin-right: 50px;
+  margin-left: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tabs button:last-child {
+  margin-right: 0;
+}
+
+.tabs button.active {
+  background-color: #d87070;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+  .leave-table {
+    margin-left: 30px;
+  }
+
+  .apply-button {
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .leave-cards {
+    flex-direction: column;
+  }
+
+  .leave-card {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .leave-table {
+    margin-left: 30px;
+  }
+
+  .apply-button {
+    margin-right: 30px;
+  }
+}
+
+
+/* form */
+/* Prevent scrollbar on mobile view */
+/* Prevent scrollbar on mobile view */
+body {
+  overflow-x: hidden;
+}
+
+/* Common styles */
+.leave-form-container {
+  display: grid;
+  margin-top: 10px;
+  padding-top: 40px; /* Add padding to separate the heading from the form */
+  align-items: center;
+  max-width: 800px; /* Set maximum width for the container */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+.leave-form-container h2 {
+  margin-bottom: 20px; /* Add spacing between the heading and the form */
+  text-align: center; /* Center the heading text */
+}
+/* Common styles */
+.leave-form-header {
+  text-align: center; /* Center the header text */
+  margin-top: 20px; /* Adjust margin from the top */
+}
+
+.leave-form-container {
+  display: grid;
+  margin-top: 10px;
+  padding-top: 40px; /* Add padding to separate the heading from the form */
+  align-items: center;
+  max-width: 800px; /* Set maximum width for the container */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+.leave-form-container h2 {
+  margin-bottom: 20px; /* Add spacing between the heading and the form */
+  text-align: center; /* Center the heading text */
+}
+
+
+/* apply for leave */
+.leave-form-header {
+  text-align: center; /* Center the header text */
+  margin-top: 20px; /* Adjust margin from the top */
+}
+
+.leave-form-container {
+  display: grid;
+  margin-top: 10px;
+  padding-top: 40px; /* Add padding to separate the heading from the form */
+  align-items: center;
+  max-width: 800px; /* Set maximum width for the container */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+.leave-form-container h2 {
+  margin-bottom: 20px; /* Add spacing between the heading and the form */
+  text-align: center; /* Center the heading text */
+}
+
+.form-container {
+  width: 90%; /* Make the form container take up 90% of the viewport width */
+  max-width: 400px; /* Set maximum width for the form container */
+  padding: 30px;
+  background-color: #f2f2f2;
+  border-radius: 40px;
+  margin: 0 auto; /* Center the form horizontally */
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #e08080;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+button:hover {
+  background-color: #816565;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  /* Mobile view styles */
+  .leave-form-header {
+    margin-top: 10px; /* Adjust margin from the top */
+  }
+
+  .leave-form-container {
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .form-container {
+    width: 100%; /* Make the form container take up 100% of the viewport width */
+    max-width: 90%; /* Set maximum width to 90% */
+    
+  }
+}
